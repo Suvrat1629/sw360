@@ -899,7 +899,6 @@ public class SpdxBOMImporter {
         return project;
     }
 
-//    test
     private List<SpdxBOMImporterSink.Response> importAsReleases(Relationship[] relationships) throws SW360Exception, InvalidSPDXAnalysisException {
         List<SpdxBOMImporterSink.Response> releases = new ArrayList<>();
 
