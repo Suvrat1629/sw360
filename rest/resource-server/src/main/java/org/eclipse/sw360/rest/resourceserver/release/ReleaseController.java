@@ -753,6 +753,7 @@ public class ReleaseController implements RepresentationModelProcessor<Repositor
         return new ResponseEntity<>(attachmentResource, HttpStatus.OK);
     }
 
+    @PreAuthorize("hasAuthority('WRITE')")
     @Operation(
             summary = "Create a new attachment for the release.",
             description = "Create a new attachment for the release.",
