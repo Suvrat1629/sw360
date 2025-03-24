@@ -23,9 +23,9 @@ struct Vendor {
     1: optional string id,
     2: optional string revision,
     3: optional string type = "vendor",
-    4: required string shortname,
+    4: optional string shortname,
     5: required string fullname,
-    6: required string url
+    6: optional string url,
 
     200: optional map<RequestedAction, bool> permissions,
 }
