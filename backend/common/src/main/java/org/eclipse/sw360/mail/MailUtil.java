@@ -282,7 +282,6 @@ public class MailUtil extends BackendUtils {
         return message;
     }
 
-    // New method for ModerationRequest
     private MimeMessage makeMessageWithSubjectAndText(String subjectKeyInPropertiesFile, String textKeyInPropertiesFile, ModerationRequest moderationRequest) {
         MimeMessage message = new MimeMessage(session);
         String subject = loadedProperties.getProperty(subjectKeyInPropertiesFile, "");
